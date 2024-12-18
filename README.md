@@ -50,6 +50,6 @@ The application uses **H2 Database** for data storage, and **Spring Data JPA** f
     localhost:8080/swagger-ui/index.html
 
 <p>
-  <img src="SwaggerUI.png" alt="Screenshot 1" width="300">
-  <img src="DbSchema.png" alt="Screenshot 1" width="300"> 
+  <img src="Conceptile/SwaggerUI.png" alt="Screenshot 1" width="300">
+  <img src="Conceptile/DbSchema.png" alt="Screenshot 1" width="300"> 
  </p>
