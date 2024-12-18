@@ -1,0 +1,21 @@
+CREATE TABLE QUESTION (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    question_text VARCHAR(255),
+    correct_answer VARCHAR(255)
+);
+
+CREATE TABLE QUESTION_CHOICES(
+    question_id BIGINT,
+    choice VARCHAR(255),
+    FOREIGN KEY (question_id) REFERENCES QUESTION(id)
+);
+
+CREATE TABLE APP_USER (
+    id BIGINT PRIMARY KEY,
+    name VARCHAR(255)
+);
+
+CREATE TABLE QUIZ_SESSION (
+    user_id BIGINT PRIMARY KEY NOT NULL,
+    correct_answers_count INT
+);
